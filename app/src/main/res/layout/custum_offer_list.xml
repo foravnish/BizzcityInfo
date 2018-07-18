@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+        <LinearLayout
+            android:id="@+id/linerAddoffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginBottom="10dp"
+                android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/free_offer_ad"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00% OFF"
+                        android:padding="4dp"
+                        android:textColor="@color/md_white_1000"
+                        android:textStyle="bold"
+                        android:layout_marginTop="120dp"
+                        android:background="@drawable/buttonback"
+
+                        android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Add Heading"
+                            android:padding="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/muli_bold"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:layout_marginStart="5dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Add Description"
+                            android:padding="4dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/md_grey_600"
+                            android:fontFamily="@font/muli"
+                            android:layout_marginStart="5dp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Expired On"
+                                android:padding="4dp"
+                                android:fontFamily="@font/muli_semibold"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/md_green_700"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date"
+                                android:padding="4dp"
+                                android:fontFamily="@font/muli"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/md_grey_600"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+                        <!--<Switch-->
+                            <!--android:id="@+id/switch1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="8dp"-->
+                            <!--android:layout_marginTop="20dp"-->
+                            <!--android:buttonTint="@color/orange"-->
+                            <!--android:layout_gravity="center_horizontal" />-->
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/switch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:checked="true"
+                            android:theme="@style/SCBSwitch"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/manageBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/muli"
+                            android:paddingBottom="3dp"
+                            android:paddingLeft="9dp"
+                            android:paddingRight="9dp"
+                            android:paddingTop="3dp"
+                            android:background="@drawable/stroke_yello"
+                            android:shadowColor="#7F000000"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="2"
+                            android:text="Manage"
+                            android:textColor="@color/md_black_1000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginBottom="10dp"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/banner3"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/premium_offer_ad"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00% OFF"
+                            android:padding="4dp"
+                            android:textColor="@color/md_white_1000"
+                            android:textStyle="bold"
+                            android:layout_marginTop="120dp"
+                            android:background="@drawable/buttonback"
+
+                            android:layout_marginLeft="10dp"/>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Add Heading"
+                                android:padding="4dp"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/muli_bold"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/blue"
+                                android:layout_marginStart="5dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Add Description"
+                                android:padding="4dp"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/md_grey_600"
+                                android:fontFamily="@font/muli"
+                                android:layout_marginStart="5dp" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Expired On"
+                                    android:padding="4dp"
+                                    android:fontFamily="@font/muli_semibold"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/md_green_700"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Date"
+                                    android:padding="4dp"
+                                    android:fontFamily="@font/muli"
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/md_grey_600"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:orientation="vertical">
+
+                            <!--<Switch-->
+                            <!--android:id="@+id/switch1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginBottom="8dp"-->
+                            <!--android:layout_marginTop="20dp"-->
+                            <!--android:buttonTint="@color/orange"-->
+                            <!--android:layout_gravity="center_horizontal" />-->
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:id="@+id/switch13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:checked="true"
+                                android:theme="@style/SCBSwitch"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/manageBtn3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/muli"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="9dp"
+                                android:paddingRight="9dp"
+                                android:paddingTop="3dp"
+                                android:background="@drawable/stroke_yello"
+                                android:shadowColor="#7F000000"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="2"
+                                android:text="Manage"
+                                android:textColor="@color/md_black_1000"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

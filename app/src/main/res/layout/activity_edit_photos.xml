@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".EditPhotos">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/profileBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Photo Gallery"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/left"
+            android:textSize="16dp"
+            android:padding="20dp"/>
+    </LinearLayout>
+
+
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:numColumns="2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/linear1"
+        android:divider="@null"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:visibility="gone"
+                android:text="Choose New Image"/>
+            <ImageView
+                android:id="@+id/imageV1"
+                android:layout_width="80dp"
+                android:visibility="gone"
+                android:layout_height="80dp"/>
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/gray"
+                android:background="@drawable/add"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

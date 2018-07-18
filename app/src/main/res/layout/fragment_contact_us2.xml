@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/strockgray2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registered Office Address"
+        android:textColor="#111"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can call or meet us at our office address or write us at the email address provided below."
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/gray"
+        android:textSize="13dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BizzCityInfo.com"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C/O SNT Infotech PVT LTD"
+        android:textColor="#111"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14dp"/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="marketing@bizzcityinfo.com"
+        android:textColor="@color/gray"
+        android:drawableLeft="@drawable/email"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://www.BizzCityInfo.com"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/web"
+        android:layout_marginRight="10dp"
+        android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/sellerNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sellerNo"
+            android:textColor="@color/gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/callorg"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/buyerNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buyNo"
+            android:textColor="@color/gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/callorg"
+            android:layout_marginRight="10dp"
+            android:textSize="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="101, 1st Floor,SG Alpha Tower Sector-9,Vasundhara, Ghaziabad (U.P) 201010"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/enquiryNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enquiry Now"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:gravity="right"
+            android:textSize="18dp" />
+
+        <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" >-->
+
+
+            <!--<fragment-->
+                <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+                <!--android:id="@+id/map"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="400dp" />-->
+
+        <!--</RelativeLayout>-->
+        <fragment
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:id="@+id/map"
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp" />
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

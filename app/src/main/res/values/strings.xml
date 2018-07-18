@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Seller App</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="termCondition">
+
+        <b>For Registered Members (Sellers):</b>
+
+\nSellers should provide true, updated and complete information of business. Required to provide the address of head/registered office while filling online registration form.
+
+\nRegistered members shall not sell, offer to sell, attempt to sell, assign, transfer, share or give the account details allotted by the Website to third parties.
+
+\nRegistered members should bring to our notice any unauthorized use of their account.
+
+\nThe leads provided by the website shall be strictly used by registered members only;Any abuse or misuse of the leads is strictly prohibited.
+
+\nThe website has power to reject any registration or deny issuance of Master and Sub User account for whatsoever reasons.
+
+\nRegistered members cannot get into any commercial engagement with other IT vendors by providing them customer queries.
+
+        \n\n<b>Refund Conditions</b>
+\nWe do not refund money, Only refund credit points on certain conditions as mentioned below:
+
+\n* In Case of invalid contact information of buyer.
+
+        \n\n<b>No Refund Conditions</b>
+\n*No response to email / phone calls by *customersMistaken/Unintentional lead purchaseRefund *request after 7 days of enquiry receipt.
+
+        \n\n<b>Termination</b>
+
+\nThe BizzCity Admin has full rights to terminate the membership of Registered Companies, if it is detected that the company is using leads for his vented interests in violation of company’s terms and conditions. Once membership is revoked, all credits pertaining to the company shall be suspended.
+
+\nTransactions between Registered Sellers and Customers
+
+\nBizzCityInfo has maintained this website for exchanging information and facilitating transactions between Registered Companies and Customers. The website does not act as a representative of either side (Companies and Customers).
+
+\nBizzCityInfo does not warrant the safety, quality and legality of services provided by Registered Members. Registered Members and Customers are solely responsible for the transactions conducted through, on or due to this website.
+
+\nBizzCityInfo is not accountable for any dispute arising out of or relating to the transaction. The two parties shall not blame Website for any disagreement and must agree to discharge the website from all demands, actions, claims, proceedings, cost, expenses and damages, which includes actual, incidental, special and consequential damages without any specified limitation.
+
+    </string>
+    <string name="aboutus">
+         <b>( Read IT, then Buy IT)</b>
+
+        \n\nBizzCityInfo is an Online local Service Directory that connect Sellers with buyers.
+
+        <b>\n\nWhy BizzCity</b>
+
+\n\nDaily Traffic - 500 + Unique Visitors (95% Traffic comes from New Ghaziabad)
+1000 + Keywords comes on Google first page (Organic Google Promotion)
+
+    </string>
+    <string name="privacy">
+
+        <b>Privacy Policy</b>
+
+<b>\n\nWe respect your privacy!</b>
+\n\nBizzCityInfo has created a Privacy Policy to provide you coherent information on how we handle and deal with personal and business information.
+
+\nCollection and Use of Personal Information
+\n\nBizzCityInfo has devised a transparent work mechanism where we and our authorized parties collect personal information and other sensitive data using an on-line registration form. The users are required to disclose 100% authentic personal details and business information (such as email address, name, business details and etc). BizzCity uses this information for providing customized services, showcasing the content of website that may interest the users. User information dealt by us is also used for transaction and accounting purposes.
+
+\n\nBizzCity reserves the right to take strict action against the user if the information provided is false and inaccurate.
+
+\n\nProtection of Information
+
+\n\n‘App’ has put in place many reasonable measures to protect your personal and business information from disclosure, alteration and unauthorized access. Information pertaining to you is passed through plenty of tools such as password and encryption, for ensuring complete safety.
+
+<b>\n\nPayment Security</b>
+
+\n\n‘App’ employs relevant payment security system for ensuring no untoward events. We have devised highly-functional ‘Payment Gateway System’ which has been given complete control for undertaking remittances. Users are required to provide credit card information and our in-house method processes the transaction automatically.
+    </string>
+    <string name="already_have_an_account"> *If you want to update your details, Connect with our <font color='#026db4'><u>Support Team. </u></font></string>
+    <string name="sellerNo"> Seller Helpline <font color='#026db4'><u>+91 8766336834 </u></font></string>
+    <string name="buyNo"> Buyer Helpline <font color='#026db4'><u>0120-413 67 67 </u></font></string>
+    <string name="hit_one"><u>What is Matching Leads ?</u></string>
+    <string name="hit_two"><u>What is Purchased Leads ?</u></string>
+    <string name="hit_three"><u>What is Buy Packages ?</u></string>
+
+    <string name="tp_one"><b>Trial Package: </b>20 Points = 4 to 5 Leads.</string>
+    <string name="tp_two"><b>Silver Package:</b> 42 Points = 10 to 11 Leads.</string>
+    <string name="tp_three"><b>Gold Package:</b> 110 Points = 27 to 28 Leads.</string>
+    <string name="tp_four"><b>Diamond Package:</b> 230 Points = 57 to 58 Leads.</string>
+    <string name="update1"><font color='#026db4'>UPDATE</font></string>
+</resources>

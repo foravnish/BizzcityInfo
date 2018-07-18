@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_50">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/headtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Plan"
+            android:fontFamily="@font/muli_semibold"
+            android:textSize="22sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/md_black_1000"
+            android:shadowColor="#7F000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+
+            />
+        <RelativeLayout
+            android:id="@+id/box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/stroke_simple"
+            android:layout_below="@+id/headtxt"
+            android:layout_margin="10dp">
+
+
+
+
+
+            <TextView
+                android:id="@+id/bcitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blissfulthinking"
+                android:padding="7dp"
+                android:shadowColor="@color/md_grey_900"
+                android:shadowDx="8"
+                android:layout_gravity="center"
+                android:shadowDy="8"
+                android:layout_centerHorizontal="true"
+                android:shadowRadius="8"
+                android:text="BCI PRIMO"
+                android:textColor="#ffcc00"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"/>
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/bcitext"
+                android:divider="@null">
+            </GridView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

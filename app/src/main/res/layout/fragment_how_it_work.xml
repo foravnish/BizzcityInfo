@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/howitworks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/md_green_400"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="How It Works"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/howitworks"
+                    android:padding="7sp"
+                    android:text="BizzCity provides you with matching leads on the basis of what services you provide."
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/matching"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/info"
+                    android:layout_marginLeft="7dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@color/md_yellow_500"
+                    android:text="@string/hit_one"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/samplepost"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_below="@+id/matching"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/neeig" />
+
+                <ImageView
+                    android:id="@+id/lock3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/samplepost"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/unlock" />
+
+                <ImageView
+                    android:id="@+id/lockred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lock3"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/lock" />
+
+                <ImageView
+                    android:id="@+id/number1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignBottom="@+id/infonumber1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/number2" />
+
+                <TextView
+                    android:id="@+id/infolock3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/samplepost"
+
+                    android:layout_marginLeft="7sp"
+                    android:layout_toRightOf="@+id/lock3"
+                    android:padding="7sp"
+                    android:text=": Green Lock means Lead is open to buy."
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/infolockred"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/infolock3"
+                    android:layout_marginLeft="7sp"
+                    android:layout_toRightOf="@+id/lockred"
+                    android:padding="7sp"
+                    android:text=": Red lock means Lead is taken by 1 Seller."
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/infonumber1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/infolockred"
+                    android:layout_marginLeft="33dp"
+                    android:padding="7sp"
+                    android:layout_marginRight="10dp"
+                    android:text=": This much points need to buy this Lead."
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/purchased"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number1"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="30sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@color/md_yellow_500"
+                    android:text="@string/hit_two"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/purchasedInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/purchased"
+                    android:layout_marginTop="10dp"
+                    android:padding="7sp"
+                    android:text="In Purchased lead, you can directly contact the customer. "
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/buypackage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/purchasedInfo"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="15sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    android:background="@color/md_yellow_500"
+                    android:text="@string/hit_three"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/creditpoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buypackage"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="13dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="@color/md_green_400"
+                    android:text="1 Credit Points = 25 Rupees"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/trival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/creditpoints"
+                    android:layout_marginLeft="7sp"
+                    android:layout_marginTop="13dp"
+                    android:padding="7sp"
+                    android:text="@string/tp_one"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/silver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trival"
+                    android:layout_marginLeft="7sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="7sp"
+                    android:text="@string/tp_two"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/gold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/silver"
+                    android:layout_marginLeft="7sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="7sp"
+                    android:text="@string/tp_three"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/diamond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gold"
+                    android:layout_marginLeft="7sp"
+                    android:layout_marginTop="10dp"
+                    android:padding="7sp"
+                    android:text="@string/tp_four"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

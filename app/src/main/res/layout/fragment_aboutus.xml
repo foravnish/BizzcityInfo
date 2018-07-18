@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:text="( Read IT, then Buy IT)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:text="BizzCityInfo is an Online local Service Directory that connect Sellers with buyers."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/blue"
+                android:text="Why BizzCity" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:textColor="@color/orange"
+                android:text="Daily Traffic - 500 + Unique Visitors (95% Traffic comes from New Ghaziabad)"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/orange"
+                android:layout_marginRight="10dp"
+                android:text="1000 + Keywords comes on Google first page (Organic Google Promotion) "/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

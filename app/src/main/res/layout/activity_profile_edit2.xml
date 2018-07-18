@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/profileBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/left"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:text="Edit Profile"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="0dp"-->
+            <!--card_view:cardCornerRadius="0dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:paddingBottom="15dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp">-->
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/homeimgjpg" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="#a9000000"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/com_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="@font/muli_bold"
+                            android:gravity="left|bottom"
+                            android:text="Loading Loading"
+                            android:textColor="@color/white"
+                            android:textSize="24dp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/linerlay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="left">
+
+                            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                                android:id="@+id/rating"
+                                style="@style/Widget.MaterialRatingBar.RatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="23dp"
+                                android:layout_marginLeft="8dp"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:layout_gravity="center"
+                                android:progressTint="@color/orange"
+                                android:stepSize="1"
+                                card_view:mrb_fillBackgroundStars="true"
+                                card_view:mrb_progressBackgroundTint="#757575" />
+                            <TextView
+                                android:id="@+id/totlareview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/rating"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/muli"
+                                android:text="Reviews"
+                                android:layout_marginTop="7dp"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:drawablePadding="2dp"
+                            android:drawableTint="@color/md_blue_grey_400"
+                            android:fontFamily="@font/muli"
+                            android:text="Loading"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/location2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:drawablePadding="2dp"
+                            android:drawableTint="@color/md_blue_grey_400"
+                            android:fontFamily="@font/muli"
+                            android:text="Loading"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/userID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:drawablePadding="2dp"
+                            android:drawableTint="@color/md_blue_grey_400"
+                            android:fontFamily="@font/muli"
+                            android:text="Loading"
+                            android:visibility="gone"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <!--<me.zhanghai.android.materialratingbar.MaterialRatingBar-->
+                            <!--android:id="@+id/rating"-->
+                            <!--style="@style/Widget.MaterialRatingBar.RatingBar"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="23dp"-->
+                            <!--android:layout_marginLeft="8dp"-->
+                            <!--android:isIndicator="true"-->
+                            <!--android:numStars="5"-->
+                            <!--android:progressTint="@color/orange"-->
+                            <!--android:stepSize="1"-->
+                            <!--card_view:mrb_fillBackgroundStars="true"-->
+                            <!--card_view:mrb_progressBackgroundTint="#757575" />-->
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/totlareview"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="center_vertical"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:layout_alignRight="@+id/rating"-->
+                            <!--android:layout_marginLeft="10dp"-->
+                            <!--android:fontFamily="@font/muli"-->
+                            <!--android:text="Reviews"-->
+                            <!--android:textColor="@color/md_black_1000"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:visibility="visible" />-->
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/editList"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_gravity="right"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:drawableLeft="@android:drawable/ic_menu_edit"
+                                    android:drawablePadding="5dp"
+                                    android:fontFamily="@font/muli_semibold"
+                                    android:gravity="right|center_vertical"
+                                    android:text="Upload Image"
+                                    android:textColor="#fff"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/orange"
+                android:drawableLeft="@drawable/loc2"
+                android:drawableTint="@color/md_grey_800"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/muli"
+
+                android:gravity="center_vertical"
+                android:paddingRight="3dp"
+                android:text="Loading  "
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="@color/orange"
+                android:drawableLeft="@drawable/telephone"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/md_grey_800"
+                android:fontFamily="@font/muli"
+                android:text="Loading"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="@color/orange"
+                android:drawableLeft="@drawable/callto1"
+                android:drawableTint="@color/md_grey_800"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/muli"
+                android:text="Loading"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="@color/orange"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableTint="@color/md_grey_800"
+                android:fontFamily="@font/muli"
+                android:text="Loading"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray2"></View>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/muli_bold"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:drawableTop="@drawable/manage"
+                android:text="Click to Manage Details"
+                android:drawableTint="@color/black"
+                android:textColor="@color/md_grey_800"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/pMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/payment"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/md_grey_800"
+                android:fontFamily="@font/muli_semibold"
+                android:gravity="left"
+                android:text="Payment Mode ?"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text=""
+                android:fontFamily="@font/muli"
+                android:textColor="@color/black"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray2"></View>
+
+            <TextView
+                android:id="@+id/openingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/time2"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/md_grey_800"
+                android:fontFamily="@font/muli_semibold"
+                android:gravity="left"
+                android:text="Opening time ?"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text=""
+                android:fontFamily="@font/muli"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray2"></View>
+            <TextView
+                android:id="@+id/closingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/time2"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/md_grey_800"
+                android:fontFamily="@font/muli_semibold"
+                android:gravity="left"
+                android:text="Closing Time ?"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text=""
+                android:fontFamily="@font/muli"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/md_grey_800"
+                android:fontFamily="@font/muli_semibold"
+                android:gravity="left"
+                android:text="Work in 2 shifts ?"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtYes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center_horizontal"
+                    android:text="Yes"
+                    android:background="@drawable/strock_pmt"
+                    android:textColor="#111" />
+
+                <TextView
+                    android:id="@+id/txtNo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center_horizontal"
+                    android:text="No"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/strock_pmt"
+                    android:textColor="#111" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linerSendonTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/gray2"></View>-->
+
+                <TextView
+                    android:id="@+id/openingTime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/time2"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/md_grey_800"
+                    android:fontFamily="@font/muli_semibold"
+                    android:gravity="left"
+                    android:text="Opening time ?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text=""
+                    android:fontFamily="@font/muli"
+                    android:textColor="@color/black" />
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@color/gray2"></View>-->
+                <TextView
+                    android:id="@+id/closingTime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/time2"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/md_grey_800"
+                    android:fontFamily="@font/muli_semibold"
+                    android:gravity="left"
+                    android:text="Closing Time ?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:text=""
+                    android:fontFamily="@font/muli"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray2"></View>
+
+
+            <TextView
+                android:id="@+id/homedel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/delivery2"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/md_grey_800"
+                android:fontFamily="@font/muli_semibold"
+                android:gravity="left"
+                android:text="Home Delivery ?"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center_horizontal"
+                    android:text="Yes"
+                    android:background="@drawable/strock_pmt"
+                    android:textColor="#111" />
+
+                <TextView
+                    android:id="@+id/txtNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center_horizontal"
+                    android:text="No"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/strock_pmt"
+                    android:textColor="#111" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="2"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/md_grey_800"
+                        android:fontFamily="@font/muli_semibold"
+                        android:text="Min. Order Amount "
+                        android:textColor="@color/md_grey_800"
+                        android:textSize="13sp"
+                        android:visibility="visible" />
+
+                    <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:id="@+id/input_layout_password"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<EditText-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="55dp"-->
+                    <!--android:hint="Minimum Order Amount"-->
+                    <!--android:textColor="@color/blue" />-->
+
+                    <!--</android.support.design.widget.TextInputLayout>-->
+                    <EditText
+                        android:id="@+id/minOrder"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Rs. "
+                        android:layout_marginTop="5dp"
+                        android:inputType="number"
+                        android:background="@drawable/strock_pmt2"
+                        android:textColor="#111"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+
+                        android:inputType="number"
+                        android:drawableTint="@color/blue"
+                        android:fontFamily="@font/muli_semibold"
+                        android:gravity="left"
+                        android:text="Max Delivery Distance"
+                        android:textColor="@color/md_grey_800"
+                        android:textSize="13sp"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/delKm"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Km. "
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/strock_pmt2"
+                        android:textColor="#111"
+                        android:inputType="number"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray2"></View>
+
+            <TextView
+                android:id="@+id/closingDay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/calendar2"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/md_grey_800"
+                android:fontFamily="@font/muli_semibold"
+                android:gravity="left"
+                android:text="Closing Day"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text=""
+                android:fontFamily="@font/muli"
+                android:textColor="@color/black"/>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="@drawable/strock_simple"-->
+                <!--android:drawablePadding="0dp">-->
+
+                <!--<Spinner-->
+                    <!--android:id="@+id/closingDay"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:drawableTint="@color/blue"-->
+                    <!--android:gravity="left"-->
+                    <!--android:textColor="#111"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <Button
+                android:id="@+id/submitEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/stroke2"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

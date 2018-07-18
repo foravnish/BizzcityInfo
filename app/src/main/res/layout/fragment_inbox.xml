@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:horizontalSpacing="3dp"
+        android:layout_below="@+id/date"
+        android:verticalSpacing="7dp"
+        android:stretchMode="columnWidth"/>
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#111"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="No"/>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "65768133140",
+    "firebase_url": "https://bizzcityinfo-d7ca9.firebaseio.com",
+    "project_id": "bizzcityinfo-d7ca9",
+    "storage_bucket": "bizzcityinfo-d7ca9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65768133140:android:cc1f80ae8c4ad257",
+        "android_client_info": {
+          "package_name": "sntinfotech.bizzcityinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65768133140-t8j4fpdjh9hq809pv30rokbdpvhjrrdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9byoqWr6uYGwib8e6HLoJFB0ZVXh6wKI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_50">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stroke_simple"
+                    android:layout_below="@+id/headtxt"
+                    android:layout_margin="10dp">
+
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/line1"
+                            android:layout_below="@+id/bcitext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="7dp"
+                            android:background="@drawable/stroke_simple">
+
+
+
+                            <TextView
+                                android:id="@+id/mnthtext1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="month"
+                                android:padding="5dp"
+                                android:textSize="17sp"
+                                android:textColor="@color/md_black_1000"
+                                android:fontFamily="@font/muli_semibold"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/mnthtext1"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center"
+                                android:text="you will be benefitted with extra features and extra support, your services will be highlighted and you will earn more."/>
+
+                            <TextView
+                                android:id="@+id/oneMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00"
+                                android:padding="5dp"
+                                android:textSize="15sp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/price1"
+                                />
+                            <TextView
+                                android:id="@+id/price1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00"
+                                android:padding="5dp"
+                                android:textSize="15sp"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@color/md_black_1000"
+                                android:layout_alignParentRight="true"
+
+
+                                />
+                        </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+</RelativeLayout>
